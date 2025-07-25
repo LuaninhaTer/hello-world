@@ -1,0 +1,112 @@
+/*
+  ***********
+  ** Fonts **
+  ***********
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+/*
+  ***********
+  ** Reset **
+  ***********
+*/
+* {
+  margin:  0;
+  padding:  0;
+  outline:  none;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  vertical-align: baseline;
+
+  user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+/*
+  ***************
+  ** Variables **
+  ***************
+*/
+:root {
+  --kirby-color-1: #d74894;
+  --kirby-color-2: #df6da9;
+  --kirby-color-3: #e791bf;
+  --kirby-color-4: #efb6d4;
+  --kirby-color-5: #f7daea;
+
+  --secondary-color-1: #ffa500;
+  --secondary-color-2: #777777;
+
+  --font-color: #f6f6ff;
+
+  --font-1: Roboto Mono;
+  --font-2: Roboto;
+  --font-3: sans-serif;
+}
+
+/*
+  **************
+  ** Defaults **
+  **************
+*/
+body {
+  overflow-x: hidden;
+  font: 400 18px var(--font-1), var(--font-2), var(--font-3);
+  background: linear-gradient(var(--kirby-color-1), var(--kirby-color-2));
+  color: var(--font-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  background: linear-gradient(var(--kirby-color-1), var(--kirby-color-2));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  overflow-y: auto;
+}
+
+
+/*
+  ****************
+  ** Components **
+  ****************
+*/
+.flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+h2 {
+  color: var(--secondary-color-1);
+}
+
+header {
+  border-bottom: 1px solid var(--secondary-color-2);
+  margin-top: 1em;
+}
+
+footer {
+  border-top: 1px solid var(--secondary-color-2);
+}
+
+#nome-usuario{
+  font-weight: bold;
+}
+
+.texto-ingles{
+  font-style: italic;
+}
